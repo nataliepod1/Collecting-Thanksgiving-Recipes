@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <head>
+        <title>Collecting Thanksgiving Recipes</title>
+    </head>
+    <body>
+        <h1>Collecting Thanksgiving Recipes</h1>
+        
+        <div>
+            <label for="email">Your email:</label>
+            <input name="email" type="text" id="email" />
+        </div>
+        <div>
+            <label for="date">Today's Date:</label>
+            <input name="date" type="text" id="date" />
+        </div>
+        <div>
+            <label for="name">Recipe Name:</label>
+            <input name="name" type="text" id="name" />
+        </div>
+
+
+
+        <form action="">
+            <p>Which recipes do you want to make for Thanksgiving?</p>
+                <input type="checkbox" name="service"
+                    value="Sparkling Apple Cider Sangria" checked="checked" /> Sparking Apple Cider Sangria
+                <input type="checkbox" name="service"
+                    value="Cranberry Brie Bites" checked="checked" /> Cranberry Brie Bites
+                <input type="checkbox" name="service"
+                    value="Stuffing and Mashed Potatoes" checked="checked" /> Stuffing and Mashed Potatoes
+                <input type="checkbox" name="service"
+                    value="Apple Pie" checked="checked" /> Apple Pie 
+        </form>
+
+        
+        <form action="dropdownbox">
+            <p>What type of recipe is this?</p>
+                <select name="devices" >
+                    <option value="drink">Drink</option>
+                    <option value="appetizer">Appetizer</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="dessert">Dessert</option>
+                </select>
+       </form>
+
+  
+
+
+        <button id="add-gratitude-button" onclick="addGratitude()">Add Gratitude</button>
+
+        <ul id="gratitude-list"></ul>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
