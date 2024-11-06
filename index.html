@@ -15,4 +15,49 @@
         </div>
         <div>
             <label for="name">Recipe:</label>
-          
+            <input name="name" type="text" id="name" />
+        </div>
+
+
+
+        <form>
+            <p>Which recipe do you want to make for Thanksgiving?</p>
+            <label>
+                <input type="checkbox" name="service"
+                    value="Sparkling Apple Cider Sangria" /> Sparking Apple Cider Sangria
+            </label>
+            <label>
+                <input type="checkbox" name="service"
+                    value="Cranberry Brie Bites" /> Cranberry Brie Bites
+            </label>
+            <label>
+                <input type="checkbox" name="service"
+                    value="Stuffing and Mashed Potatoes" /> Stuffing and Mashed Potatoes
+            </label>
+            <label>
+                <input type="checkbox" name="service"
+                    value="Apple Pie" /> Apple Pie
+            </label> 
+        </form>
+
+        
+        <form action="dropdownbox">
+            <p>What type of recipe is this?</p>
+                <select name="devices" >
+                    <option value="drink">Drink</option>
+                    <option value="appetizer">Appetizer</option>
+                    <option value="dinner">Dinner</option>
+                    <option value="dessert">Dessert</option>
+                </select>
+       </form>
+
+  
+
+
+        <button id="add-recipe-button" onclick="addRecipe()">Show Recipe</button>
+
+        <ul id="show-recipe"></ul>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
